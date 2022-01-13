@@ -1,0 +1,59 @@
+body {background-color: lightgoldenrodyellow;}
+h1 {color: blue;}
+h2 {color: cyan;}
+#p1 {color: yellow;}
+a:hover {color: green;}
+a:link{color: blue;}
+p.par{font-size: 20px;}
+#opening { border: 5px dotted lightgreen; 
+overflow: hidden;
+padding: 20px;
+background-color: white;}
+#list{
+	float: left;
+	width: 25%; 
+margin: 1em; 
+border: 2px solid blue;
+}
+#second_list{
+	 float: left;
+width: 25%; 
+margin: 1em; 
+border: 2px solid limegreen;
+}
+#third_list{
+	float: left;
+width: 25%; 
+margin: 1em; 
+border: 2px solid red;
+}
+#index_list{
+	float: right;
+width: 50%; 
+margin: 1em; 
+border: 2px solid red;
+}
+.box{    
+    	background-color: firebrick;
+   	width: 500px;
+   	padding: 20px;
+   	position: relative;
+}
+.picture_top{
+	position: relative;
+	padding: 10px;
+	top: 80px;    
+    	font-size: 45px;
+    	color:white;
+    	font-family: Impact;
+    	text-shadow: 2px 2px #000000;
+}
+.picture_bottom{
+	position: relative;
+	bottom: 60px;
+text-align: center;
+font-size: 50px;
+color:white;
+font-family: Impact;
+	text-shadow: 2px 2px #000000;
+}

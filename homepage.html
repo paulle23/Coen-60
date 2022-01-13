@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Paul's Homepage</title>
+		<link rel="stylesheet" type="text/css" href="homepage_layout.css">
+	</head>
+	<body>
+		<!-- use #id name in css file-->
+	<div id="opening">
+		<h1><a href=""><!-- Lets you click on Paul's home-->
+			Paul's Home</a>
+		</h1>
+
+		<p class="special"> Hello, welcome to my homepage. This is the homepage for my assignment for Coen 60 Lab.</p>
+	</div>
+	<div id="menu"><h2 align="center">Menu</h2>
+		<ul>
+			<li>Opening</li>
+			<ul>
+				<li><a href="#opening">Heading</a></li> 
+			</ul>
+			<li>Main Content</li>
+			<ul>
+				<li><a href="#list">List</a></li> 
+				<li><a href="#picture">Pictures with information about them</a></li> 
+			</ul>
+			<li>Other Content</li>
+			<ul>
+				<li><a href="#links">Links</a></li>
+				<li><a href="#video">Youtube Video</a></li> 
+			</ul>
+		</ul></div>
+	<div id="picture"><h2 align="center">Main Content</h2>
+		<!--List -->
+		<ul id="list"> 
+			<h3 align="center">List of things I like to do</h3>
+			<li>Play Basketball</li> 
+			<li>Watch movies</li> 
+			<li>Hang out with friends</li> 
+			<li>Eat food</li> 
+		</ul>
+		<ul id="second_list"> 
+			<h3 align="center">My Favorite Links</h3>
+			<li><a href="https://www.google.com">Google</a></li> 
+			<li><a href="http://youtube.com/">Youtube</a></li> 
+			<li><a href="http://apple.com/">Apple</a></li>  
+			<li><a href="http://microsoft.com/">Microsoft</a></li> 
+			<li><a href="https://surviv.io/">Surviv online game</a></li> 
+		</ul>
+	
+		<!--Santa Clara Picture -->
+		<p class="info">This is a picture of the school that I go to. There is a football team with a stadium in Santa Clara. The San Francisco 49ers are a professional American football team based in the San Francisco Bay Area. The 49ers compete in the National Football League as a member of the league's National Football Conference West division.The team plays its home games at Levi's Stadium in Santa Clara, California, located 38 miles (61 km) southeast of San Francisco in the heart of Silicon Valley. Since 1988, the 49ers have been headquartered in Santa Clara. The name "49ers" comes from the prospectors who arrived in Northern California in the 1849 Gold Rush.</p>
+		<img src="https://www.usnews.com/dims4/USNEWS/720e1a2/17177859217/resize/800x540%3E/quality/85/?url=https%3A%2F%2Fmedia.beam.usnews.com%2F65%2F239a8254f5a651654163bad9fee55a%2FJL160917_4111_CampusBeauty_0259.jpg" alt="Santa Clara picture" class="university" width="410px" height="400px"/>
+		<p class="info2">Santa Clara University Logo </p>
+		<img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ad/Santa_Clara_U_Seal.svg/1200px-Santa_Clara_U_Seal.svg.png" alt="Santa Clara logo" class="universities" width="300px" height="300px"/>
+	</div>
+	<div id="links"><h2 align="center">Other Content</h2>
+		<br>
+		<!--Internal and External Links -->
+		<a href="#list">Internal link to list</a><br/>
+		<a href="https://www.google.com/maps/@37.3542852,-121.9359228,15z"> External link to Google maps for navigation </a> 
+		<br>
+		<!--Table -->
+		<table border="1">
+  			<caption>Year</caption>
+  			<tr><th>2020</th><th>2021</th></tr>
+  			<tr><td>Past</td><td>Present</td></tr>
+  		</table>
+
+		<!--Youtube Video -->
+		<br>
+  		<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/jNQXAC9IVRw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  		<br>
+  		<style>
+		.tooltip {
+  			position: relative;
+  			display: inline-block;
+  			border-bottom: 1px dotted black;
+		}
+
+		.tooltip .tooltiptext {
+  			visibility: hidden;
+  			width: 200px;
+  			background-color: black;
+  			color: #fff;
+  			text-align: center;
+  			border-radius: 6px;
+  			padding: 10px 0;
+
+  			position: absolute;
+  			z-index: 1;
+		}
+
+		.tooltip:hover .tooltiptext {
+  			visibility: visible;
+		}
+		</style>
+		<body style="text-align:center;">
+
+		<p>Move the mouse over the text that is under this:</p>
+
+		<div class="tooltip">What school do I go to?
+  			<span class="tooltiptext">Santa Clara University</span>
+		</div>
+  		</body>
+
+
+		<!--Tabindex -->
+		<br>
+		<a href="http://www.yahoo.com/" tabindex="2">Yahoo 2nd</a>
+		<br>
+		<a href="http://www.google.com/" tabindex="1">Google 1st</a>
+		<br>
+		<a href="http://www.microsoft.com/" tabindex="3">Microsoft 3rd</a>
+
+		<br>
+  		<!--Accesskey -->
+  		<p> Accesskey </p>
+  		<a href="https://www.google.com/search?q=upcoming+holidays&oq=upcoming+h&aqs=edge.1.69i57j0i433i512l2j0i433i457i512j0i433i512j0i512j0i433i512l2j0i512.3005j0j9&sourceid=chrome&ie=UTF-8" accesskey="h">Google Search for upcoming holidays</a><br>
+  	</div>
+</body>
+
+	
+</html>

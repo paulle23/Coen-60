@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS demo</title>
+		<link rel="stylesheet" type="text/css" href="demo.css">
+		<script type="text/javascript">
+			/*window.alert("hello!");*/
+			var radius = window.prompt("Enter the radius");
+			function printPI(){
+				document.getElementById('demo').
+				innerHTML = Math.PI;
+			}
+			function calculateArea(){
+				document.getElementById('area').innerHTML = Math.PI * radius * radius;
+			}
+			function RandomGen(){
+				var randValue = Math.random() * 10;
+				document.getElementById('demo').innerHTML = Math.floor(randValue);
+			}
+		</script> 
+
+	</head>
+	<body>
+			
+		Hello: <p id="demo"> a paragraph </p>
+		<p id="area"></p>
+		<form>
+			<input type="button" value="Click Me!" onclick="printPI()">
+			<input type="button" value="Calculate" onclick="calculateArea()">
+			<input type="button" value="Generate Random Number" onclick="RandomGen()">
+		</form>
+
+	</body>
+</html>

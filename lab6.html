@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Lab 6 form validation</title>
+		<link rel="stylesheet" type="text/css" href="demo.css">
+	</head>
+	<body>
+		<p>Enter an email</p>
+		<form>
+		<input id="email">
+	</form>
+		<p>Enter your name</p>
+		<form>
+		<input id="name">
+	</form>
+		<p>Enter your phone number</p>
+		<form>
+		<input id="number">
+	</form>
+	<p id="demo"></p>
+	<p id="demo1"></p>
+	<p id="demo2"></p>
+		<button type="button" onclick="checkemail()">Submit</button>
+		<h3>Which of the following professional sports team are based in SF area?</h3><br>
+		<form >
+			<input type="radio" name="choice" value="49ers"> 49ers<br>
+			<input type="radio" name="choice1" value="Warriors"> Warriors<br>
+			<input type="radio" name="choice2" value="Giants"> Giants<br>
+			<input type="radio" name="choice3" value="Dodgers"> Dodgers<br>	
+			<input type="radio" name="choice4" value="A's"> A's<br>	
+			<input type="radio" name="choice5" value="Sharks"> Sharks<br>	
+		</form>
+		<button onclick="correct()">check correctness</button>
+	<script type="text/javascript">
+		function checkemail() {
+  		let x = document.getElementById("email").value;//numb is id value
+  		let y = document.getElementById("name").value;
+  		let z = document.getElementById("number").value;
+  		let text;
+  		let text1;
+  		let text2;
+  		if(y.length == 0)
+  		{
+  			text1 = "name is empty";
+  		}
+  		else
+  		{
+  			text1 = "Name is good";
+  		}
+  		if(x.length == 0)
+  		{
+  			text = "email is empty";
+  		}
+  		else
+  		{
+  			for(var i = 0; i < x.length;i++){
+  				if (x.includes("@")) {
+    				text = "valid email";
+    				break;
+  				}
+  				else
+  					text = "invalid email";
+  			}
+  		}
+  		if(isNaN(z))
+  		{
+  			text2 = "not a number";
+  		}
+  		else if(z.length == 0)
+  		{
+  			text2 = "empty phone number";
+  		}
+  		else
+  		{
+  			if(z.length != 10)
+  			{
+  				text2 = "phone number is not the correct length";
+  			}
+  			else
+  				text2 = "phone number is good";
+  		}
+  		document.getElementById("demo").innerHTML = text;
+  		document.getElementById("demo1").innerHTML = text1;
+  		document.getElementById("demo2").innerHTML = text2;
+		}
+		function correct() {
+			var radios = document.getElementsByName('choice');
+  			var val= "";
+  			for (var i = 0; i < radios.length; i++) {
+      			if (radios[i].checked) {//checks the checked box
+         			val = radios[i].value; 
+         			break;
+       			}
+  			}
+  			var radios1 = document.getElementsByName('choice1');
+  			var val1= "";
+  			for (var a = 0; a < radios1.length; a++) {
+      			if (radios1[a].checked) {//checks the checked box
+         			val1 = radios1[a].value; 
+         			break;
+       			}
+  			}
+  			var radios2 = document.getElementsByName('choice2');
+  			var val2= "";
+  			for (var b = 0; b < radios2.length; b++) {
+      			if (radios2[b].checked) {//checks the checked box
+         			val2 = radios2[b].value; 
+         			break;
+       			}
+  			}
+  			var radios3 = document.getElementsByName('choice3');
+  			var val3= "";
+  			for (var c = 0; c < radios3.length; c++) {
+      			if (radios3[c].checked) {//checks the checked box
+         			val3 = radios3[c].value; 
+         			break;
+       			}
+  			}
+  			var radios4 = document.getElementsByName('choice4');
+  			var val4= "";
+  			for (var d = 0; d < radios4.length; d++) {
+      			if (radios4[d].checked) {//checks the checked box
+         			val4 = radios4[d].value; 
+         			break;
+       			}
+  			}
+  			var radios5 = document.getElementsByName('choice5');
+  			var val5= "";
+  			for (var e = 0; e < radios5.length; e++) {
+      			if (radios5[e].checked) {//checks the checked box
+         			val5 = radios5[e].value; 
+         			break;
+       			}
+  			}
+  			/*if(val3 == "Dodgers")
+  			{
+  				alert('Answer is incorrect');
+  			}*/
+  			if (val3 == "Dodgers" ) {
+    			alert('Answer is incorrect');
+  			} 
+  			else if (val == "" && val1 == "" && val2 == "" && val3 == "" && val4 == "" && val5 == "" ) {
+    			alert('please select choice answer');
+  			} 
+  			else if ( val == "49ers" && val1 == "Warriors" && val2 == "Giants" && val4 == "A's" && val5 == "Sharks") {
+    			alert('Answer is correct');
+  			} 
+  			else {
+    			alert('Answer is partially correct');
+  			}
+		}
+	</script>
+</body>
+</html>

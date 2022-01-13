@@ -1,0 +1,17 @@
+.highlight {
+  background-color: yellow;
+}
+.highlight1 {
+  background-color: #3aafdc;
+}
+.highlight2 {
+  background-color: #39FF14;
+}
+* {background-color: #E8FBFB}
+img{float: right;}
+p{font-weight: normal;}
+div{padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}

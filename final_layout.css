@@ -1,0 +1,128 @@
+#opening { 
+	border: 2px solid black; 
+	padding: 10px;
+	font-family: Arial;
+	text-align: center;
+	font-size: 15px;
+	color: blue;}
+#menu {
+	border:5px solid gold;
+	width:20%;
+	float:left;   
+	margin:10px;
+	margin-left: 0px;  	
+	height: 875px;    
+	font-size: 19px;
+	text-align: left;
+	font-family: Arial;
+	background-color:#E8FBFB;
+}
+#picture { 
+	border: 5px solid gold; 
+	overflow: hidden;
+	width: 77%;
+	padding: 5px;
+	margin: 10px;
+	font-family: Arial;
+	text-align: left;}
+#links { 
+	border: 5px solid gold; 
+	padding: 10px;
+	font-family: Arial;
+	text-align: left;
+	font-size: 18px;
+	width: 98%;
+}
+a:hover {color: blue;}
+link:hover {color: blue;}
+p:hover {color: blue;}
+li:hover {color: blue;}
+img.university{float: right;}
+p.info{ 
+	padding: 10px;
+	width: 95%;  
+	border: 2px solid black; 
+	font-size: 20px;
+	text-align: left;}
+p.info2{ 
+	padding: 10px;
+	width: 60%;  
+	margin: 0em;
+	border: 2px solid black; 
+	font-size: 19px;
+	text-align: left;}
+.tooltip {
+  	position: relative;
+  	display: inline-block;
+  	border-bottom: 1px dotted black;
+}
+.tooltip .tooltiptext {
+ 	visibility: hidden;
+  	width: 200px;
+  	background-color: black;
+  	color: #fff;
+  	text-align: center;
+  	border-radius: 6px;
+  	padding: 10px;
+  	position: absolute;
+  	z-index: 1;
+}
+.tooltip:hover .tooltiptext {
+  	visibility: visible;
+}
+.solution {font-family: sans-serif; text-align: center; border-width: thick; border-color: green; border-style: solid; background-color: white;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	padding-left: 50px;
+	padding-right: 100px;
+	margin-left: 100px;
+	margin-right: 50px;
+	margin-top: 10px;
+	margin-bottom: 10px;}
+
+h4 {font-family: sans-serif; border-width: thick; border-color: blue; border-style: solid; background-color: #e8fbfb;}
+h4 {text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-top: 10px;}
+h2{text-align: center;}
+h3{text-align: center;}
+iframe{frameborder: 0;}
+table, th, td {
+  border: 3px solid black;
+}
+.column {
+	float: left;
+	width: 23%;
+	margin-bottom: 16px;
+	padding: 0 8px;
+}
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.container {
+	padding: 0 8px;
+}
+.name{
+	text-align: center;
+	color: black;
+}
+.title {
+	text-align: center;
+	color: gray;
+}
+.role{
+	text-align: center;
+	color: black;
+}
+.email{
+	text-align: center;
+	color: black;
+}
+.fact{
+	text-align: center;
+	color: black;
+}
+.pic{width: 100%;}

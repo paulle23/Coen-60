@@ -1,0 +1,86 @@
+#opening { 
+	border: 10px dotted green; 
+	overflow: hidden;
+	padding: 70px;
+	background-color: white;
+	font-family: Arial;
+	text-align: center;
+	font-size: 25px;}
+#list{
+	float: right;
+	width: 40%; 
+	margin: 0.5em; 
+	border: 2px solid black;
+	font-family: Arial;
+	text-align: left;
+	list-style-type:lower-roman;
+	font-size: 19px;}
+#second_list{
+	float: left; 
+	width: 40%; 
+	margin: 0.5em; 
+	border: 2px solid limegreen;
+	font-family: Arial;
+	text-align: left;
+	list-style-type:binary;
+	font-size: 19px;}
+#menu {
+	border:5px solid gold;
+	width:20%;
+	float:left;   
+	margin:10px 0 10px 5px;  	
+	height: 820px;    
+	font-size: 19px;
+	text-align: left;
+	font-family: Arial;
+	background-color:#98bf21
+}
+#picture { 
+	border: 7px solid blue; 
+	overflow: hidden;
+	padding: 5px;
+	background-color: #E8FBFB;
+	margin-top: 10px;
+	font-family: Arial;
+	text-align: left;}
+#links { 
+	border: 4px solid green; 
+	overflow: hidden;
+	padding: 70px;
+	background-color: white;
+	background: url("https://lh3.googleusercontent.com/proxy/PvdSCuK4mBg5O8XivEVrYtqFmQl3KTKjb4_fWjfaKK-ZPI8Ni4FmqnMslKQ8PmnzwWQGdOV78sPVZa0tiTqXlzF-J-NbrMOkIwt7_XQxv9g58WPlnw");
+	background-size:1500px 950px;
+	background-repeat:no-repeat;
+	font-family: Arial;
+	text-align: left;
+	font-size: 19px;}
+a:hover {color: yellow;}
+h1:hover {color: yellow;}
+title:hover {color: yellow;}
+link:hover {color: yellow;}
+p:hover {color: yellow;}
+li:hover {color: yellow;}
+caption:hover {color: yellow;}
+th:hover {color: yellow;}
+td:hover {color: yellow;}
+img:hover {color: yellow}
+img.university{float: right;}
+img.universities{
+	float: right;
+	clear: left;}
+p.info{ 
+	float: left; 
+	padding: 10px;
+	width: 60%; 
+	margin: 0.5em; 
+	border: 2px solid black; 
+	font-size: 20px;
+	text-align: left;}
+p.info2{ 
+	float: left; 
+	padding: 10px;
+	width: 50%; 
+	margin: 0.5em; 
+	border: 2px solid black; 
+	font-size: 30px;
+	text-align: left;}

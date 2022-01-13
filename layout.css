@@ -1,0 +1,11 @@
+#table1{
+	caption-side:bottom;
+}
+#col1{
+	border: 1px solid blue;
+	float:left
+}
+#col2{
+	border: 1px solid lightblue;
+	float: left;
+}

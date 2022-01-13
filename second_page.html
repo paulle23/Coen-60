@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>my second page</title>
+	<link rel="stylesheet" type="text/css" href="layout.css">
+	<!--changes a paragraph to haha which is in innerHTML-->
+	<script type="text/javascript">
+		function myFunction()
+		{
+			document.getElementById("demo").innerHTML="haha"; 
+		}
+		function popAlert(){			
+			alert("You just pressed on the button")
+		}
+	</script> 
+
+</head>
+<body>
+	<p id="demo"> a paragraph </p>
+	<input type="button" onclick="myFunction()" value="click to change'a paragraph'"></input><!--when you click on button, it calls myFunction()-->
+	<input type="button" onclick="popAlert()" value="Click for a pop up"></input><!--calls popAlert()-->
+	<table border="1" id="table1">
+		<caption>My important data</caption>
+		<tr><th>Column 1</th><th>Column2</th></tr>
+  		<tr><td>cell2</td><td>cell2</td></tr>
+  		<tr><td colspan='2'>C</td></tr>
+  		</table>
+<br>
+<div id="col1">first col</div>
+<div id="col2">sec col</div>
+<div id="col3">third col</div>
+<br>
+<form>
+	<!-- input from keyboard-->
+	<p>First name</p>
+	<input type="text" name="firstname">
+</form>
+</body>
+</html>

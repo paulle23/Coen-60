@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Rock paper scissors assignment 3</title>
+		<link rel="stylesheet" type="text/css" href="game.css">
+	</head>
+	<div>
+		<h1 id="demo"></h1>
+		<body onload="welcome()">
+		
+		<img src="https://img.favpng.com/7/19/17/rock-paper-scissors-hand-game-png-favpng-vM5iKtjbSFe5cJXXh9SAviupf.jpg" alt="gameGuide" width="500px" height="500px">
+		<table border="1">
+  			<caption id="gamename">Game</caption>
+  			<tr><th>Select One</th><th></th><th>Computer</th></tr>
+  			<tr><td>
+  				<form>
+					<input type="radio" name="choice" value="Rock">Rock<br>
+					<input type="radio" name="choice" value="Paper">Paper<br>
+					<input type="radio" name="choice" value="Scissors">Scissors<br>
+				</form></td>
+				<td><button onclick="play();game();compare();">Go</button></td><td id="computer"></td></tr>
+				<tr><td>Results:</td><td colspan=2 id="result"></td></tr>
+  		</table>
+  		<p id="demo1"></p>
+  		<p id="number"></p>
+  		<p id="counting"></p>
+  		<p id="average"></p>
+  		<script src="game.js"></script>
+  		<script type="text/javascript">
+			var games = ["Rock", "Paper", "Scissors"];
+			var val= "";
+			var computerGen="";
+			var times= 0;
+			var paper = 0;
+			var scissor = 0;
+			var rock = 0;
+			var win = 0;
+			var avg = 0;
+			var out = [" "];
+			var name = window.prompt("Enter your name");
+            welcome();
+            play();
+            game();
+            compare();
+        </script>
+		</body>
+	</div>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8 />
+		<title>JS demo</title>
+		<link rel="stylesheet" type="text/css" href="demo.css">
+	</head>
+	<body>
+		<svg width="1400" height="650" fill="none" style="border:1px solid black" id="canvas">
+			<rect id="rect1"></rect>
+		<!--<rect id="rect" x="0" y="10" width="150" height="150"
+          style="stroke:transparent; fill:none; "stroke-width:0px"/>-->
+		</svg>
+		<p id="area"></p>
+		<form>
+			<input type="button" value="Add Square" onclick="addSquare()">
+			<input type="button" value="Change Colors" onclick="changeColors()">
+			<input type="button" value="Delete All" onclick="deleteAll()">
+		</form>
+		<script type="text/javascript">
+			var squares = [];//array of squares
+			let svg = document.getElementsByTagName("svg")[0];//get all elements with tag name svg with original 
+			let svgg = svg.cloneNode(true);//original
+			function getRandomColor(){
+				var randomColor = Math.floor(Math.random()*16777215).toString(16);
+				return randomColor;
+			}
+			function addSquare(){
+				var squaree = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+				var random = getRandomColor();
+				//var squaree = document.getElementById("rect1");
+				//document.getElementById('rect').innerHTML = rect1;
+				squaree.style.fill = "#" + random;
+				squaree.setAttribute("x",Math.random()*1250);   
+				squaree.setAttribute("y",Math.random()*500);  
+				squaree.setAttribute("width",150); 	
+				squaree.setAttribute("height",150); 
+				squares.push(squaree);
+				svg.appendChild(squaree);
+				//document.getElementById("rect").innerHTML += squaree;
+
+				/*var ctx = canvas.getContext("2d");
+				ctx.fillStyle = "#" + random;
+				squares.push(ctx.fillRect(Math.random()*1250, Math.random()*500, 150, 150));//x,y,width,height*/
+			}
+			function changeColors(){
+				for(var i = 0; i < squares.length; i++) {//squares[i]() is reference to addSquare
+					var random = getRandomColor();
+					squares[i].style.fill = "#" + random;
+				}
+			}
+			function deleteAll(){//update canvas to empty string
+				let copy = svgg.cloneNode(true);//copy is equal to original
+				svg.replaceWith(copy);//replace original with the copy
+				svg = copy;//replaces original reference with copy
+			}
+		</script> 
+	</body>
+</html>
